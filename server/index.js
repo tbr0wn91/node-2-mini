@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 const bc = require("./controllers/books_controller.js");
+app.use(express.static(__dirname + '/../build'));
 
 
 app.get("/api/books", bc.read);

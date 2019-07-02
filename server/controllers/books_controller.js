@@ -22,7 +22,7 @@ module.exports = {
         const { author, title } = req.body
         const updateID = req.params.id;
         const bookIndex = books.findIndex(book => book.id == updateID);
-        let book = books[bookindex];
+        let book = books[bookIndex];
 
         books[bookIndex] = {
             id: book.id,
